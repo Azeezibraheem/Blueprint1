@@ -1,0 +1,927 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>fincang_bisloan_dfa</h:title>
+    <model>
+      <itext>
+        <translation default="true()" lang="default">
+          <text id="/fincang_bisloan_dfa/assessment/poor:label">
+            <value form="image">jr://images/picture001.jpg</value>
+            <value>Poor</value>
+          </text>
+          <text id="/fincang_bisloan_dfa/assessment/good:label">
+            <value form="image">jr://images/picture003.jpg</value>
+            <value>Good</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <fincang_bisloan_dfa id="fincang_bisloan_dfa" version="1">
+          <introduction_note/>
+          <knowledge_infinca/>
+          <open_account_list/>
+          <clientid_num1/>
+          <financialcard_list/>
+          <lenght_bizop/>
+          <proof_bizownership/>
+          <application/>
+          <account_statement_list/>
+          <client_photo/>
+          <begin_group>
+            <gurantors/>
+            <gurantor1_name/>
+            <gurantor1_occup/>
+            <gurantor1_known_client/>
+            <gurantor1_relat_client/>
+            <gurantor1_photo/>
+            <commit_gurantor1/>
+            <gurantor2_name/>
+            <gurantor2_occup/>
+            <gurantor2_known_client/>
+            <gurantor2_relat_client/>
+            <gurantor2_photo/>
+            <commit_gurantor2/>
+            <gender_list/>
+          </begin_group>
+          <begin_group1>
+            <date_time_visit/>
+            <client_geopoint/>
+            <client_bistype/>
+            <startup_amount/>
+            <presentworth_biz/>
+            <bankcash_bal/>
+            <acct_receivables/>
+            <acct_payable/>
+            <presentstock_value/>
+            <workinprog/>
+            <inventory/>
+          </begin_group1>
+          <clients_branch/>
+          <clients_district/>
+          <settlement_type/>
+          <begin_group2>
+            <dwellingdetails/>
+            <household_size/>
+            <flooringmat_list/>
+            <flooringmat_others_specified/>
+            <roofingmat_list/>
+            <roofingmat_others_specified/>
+          </begin_group2>
+          <clientsex/>
+          <loan_interest_rate/>
+          <client_dateofbirth/>
+          <client_home_address/>
+          <interviewlocation_list/>
+          <others/>
+          <interviewlocation_address/>
+          <dateofinterview/>
+          <product_types/>
+          <otherpro/>
+          <amountvill_loan/>
+          <channel_villaLoan/>
+          <distance_to_branch_location1/>
+          <duration_of_interview1/>
+          <interest_rate_onloan/>
+          <clientage/>
+          <client_photo1/>
+          <clients_mobilenumber/>
+          <record_clientresponse_groupmeeting/>
+          <client_dwelling_exteriorwall_materialused/>
+          <client_geopoint/>
+          <client_missedworkday/>
+          <number_missedworkdays/>
+          <client_healthstatus_now/>
+          <endnote/>
+          <begin_group3>
+            <householdmembers_list/>
+            <number_mealsday_hhm/>
+            <householdhead_list/>
+          </begin_group3>
+          <changeshh1/>
+          <specific_changes1/>
+          <specific_changes2/>
+          <specific_changes3/>
+          <specific_changes4/>
+          <specific_changes5/>
+          <specific_changes6/>
+          <assessment/>
+          <signature/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </fincang_bisloan_dfa>
+      </instance>
+      <bind nodeset="/fincang_bisloan_dfa/introduction_note" readonly="true()" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/knowledge_infinca" required="true()" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/open_account_list" type="select1"/>
+      <bind jr:constraintMsg="You have entered less or more than 10 digits" nodeset="/fincang_bisloan_dfa/clientid_num1" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/financialcard_list" type="select1"/>
+      <bind constraint=".&lt;1" jr:constraintMsg="client's business is less than 1 year" nodeset="/fincang_bisloan_dfa/lenght_bizop" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/proof_bizownership" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/application" readonly="true()" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/account_statement_list" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/client_photo" type="binary"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group/gurantors" readonly="true()" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group/gurantor1_name" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group/gurantor1_occup" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group/gurantor1_known_client" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group/gurantor1_relat_client" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group/gurantor1_photo" type="binary"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group/commit_gurantor1" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group/gurantor2_name" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group/gurantor2_occup" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group/gurantor2_known_client" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group/gurantor2_relat_client" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group/gurantor2_photo" type="binary"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group/commit_gurantor2" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group/gender_list" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group1/date_time_visit" type="dateTime"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group1/client_geopoint" type="geopoint"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group1/client_bistype" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group1/startup_amount" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group1/presentworth_biz" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group1/bankcash_bal" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group1/acct_receivables" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group1/acct_payable" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group1/presentstock_value" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group1/workinprog" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group1/inventory" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/clients_branch" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/clients_district" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/settlement_type" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group2/dwellingdetails" readonly="true()" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group2/household_size" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group2/flooringmat_list" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group2/flooringmat_others_specified" relevant=" /fincang_bisloan_dfa/begin_group2/flooringmat_list  = 'floor_otherspecify'" required="true()" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group2/roofingmat_list" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group2/roofingmat_others_specified" relevant=" /fincang_bisloan_dfa/begin_group2/roofingmat_list  = 'roof_otherspecify'" required="true()" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/clientsex" required="true()" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/loan_interest_rate" required="true()" type="decimal"/>
+      <bind nodeset="/fincang_bisloan_dfa/client_dateofbirth" type="date"/>
+      <bind nodeset="/fincang_bisloan_dfa/client_home_address" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/interviewlocation_list" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/others" relevant=" /fincang_bisloan_dfa/interviewlocation_list  = 'others_specify'" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/interviewlocation_address" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/dateofinterview" type="date"/>
+      <bind nodeset="/fincang_bisloan_dfa/product_types" type="select"/>
+      <bind nodeset="/fincang_bisloan_dfa/otherpro" relevant=" /fincang_bisloan_dfa/product_types  = 'pro_others_specify'" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/amountvill_loan" relevant="selected( /fincang_bisloan_dfa/product_types , pr_villagebank_loan)" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/channel_villaLoan" relevant="selected( /fincang_bisloan_dfa/product_types , pr_villagebank_loan)" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/distance_to_branch_location1" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/duration_of_interview1" type="int"/>
+      <bind constraint=".&lt;=2 or .=999" nodeset="/fincang_bisloan_dfa/interest_rate_onloan" type="decimal"/>
+      <bind constraint=". &gt;=30 and . &lt;=50" jr:constraintMsg="client's age is not allowed" nodeset="/fincang_bisloan_dfa/clientage" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/client_photo1" type="binary"/>
+      <bind nodeset="/fincang_bisloan_dfa/clients_mobilenumber" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/record_clientresponse_groupmeeting" type="binary"/>
+      <bind nodeset="/fincang_bisloan_dfa/client_dwelling_exteriorwall_materialused" type="binary"/>
+      <bind nodeset="/fincang_bisloan_dfa/client_geopoint" type="geopoint"/>
+      <bind nodeset="/fincang_bisloan_dfa/client_missedworkday" type="select1"/>
+      <bind constraint=". &lt;=30" jr:constraintMsg="Missed workdays more than 30" nodeset="/fincang_bisloan_dfa/number_missedworkdays" required="true()" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/client_healthstatus_now" required="true()" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/endnote" readonly="true()" type="string"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group3/householdmembers_list" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group3/number_mealsday_hhm" type="int"/>
+      <bind nodeset="/fincang_bisloan_dfa/begin_group3/householdhead_list" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/changeshh1" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/specific_changes1" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/specific_changes2" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/specific_changes3" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/specific_changes4" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/specific_changes5" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/specific_changes6" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/assessment" type="select1"/>
+      <bind nodeset="/fincang_bisloan_dfa/signature" type="binary"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/fincang_bisloan_dfa/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/fincang_bisloan_dfa/introduction_note">
+      <label>Loan Officer: say thank you for choosing to have a loan with us (FINCA). Now I will like to discuss with you in details our loan requirements and appraisal of your business activities for the purpose of this loan. All information given to me shall only be used for the purpose of the loan and shall be treated with ulmost confidentiality. Therefore, I will appreciate your kind and sincere response as it will help me in ascertaining the suitability of your business for loan with us. Information from you will also help us in making good decisions on your loan application.</label>
+    </input>
+    <input ref="/fincang_bisloan_dfa/knowledge_infinca">
+      <label>How did you get to know about us?</label>
+      <hint>Loan Officer, note how client got to know FINCA Nigeria</hint>
+    </input>
+    <select1 ref="/fincang_bisloan_dfa/open_account_list">
+      <label>Have opened an account with us?</label>
+      <hint>Loan Officer, advice client on the need to open an account and process involved</hint>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+    </select1>
+    <input appearance="number" ref="/fincang_bisloan_dfa/clientid_num1">
+      <label>If client has an account with FINCA, what is the client account number?</label>
+      <hint>Enter the 1st 5 digits of the account number, enter 000000 if account number is not known</hint>
+    </input>
+    <select1 ref="/fincang_bisloan_dfa/financialcard_list">
+      <label>Do you have a financial card?</label>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+    </select1>
+    <input ref="/fincang_bisloan_dfa/lenght_bizop">
+      <label>How long has your business been in operation?</label>
+      <hint>Loan Officer, please discontinue if business operation is less than 1 year. Then advice client on minimum business operation time allowed by FINCA</hint>
+    </input>
+    <input appearance="Loan Officer, take note and document all proof of business ownership" ref="/fincang_bisloan_dfa/proof_bizownership">
+      <label>What proof of business ownership do you have?</label>
+      <hint>Note: where business ownership can not be substantiated, no loan can be given</hint>
+    </input>
+    <input appearance="Ask client to provide a handwritten application" ref="/fincang_bisloan_dfa/application">
+      <label>A duly signed handwritten application to be submitted by client</label>
+      <hint>a handwirtten application must be provided by the client</hint>
+    </input>
+    <select1 ref="/fincang_bisloan_dfa/account_statement_list">
+      <label>Do you have a financial account with other banks?</label>
+      <hint>If yes, request for a copy of the statement. If no, ask if client save with other informal institutions (eg daily collector, ROSCA, ASCA)</hint>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+    </select1>
+    <upload mediatype="image/*" ref="/fincang_bisloan_dfa/client_photo">
+      <label>Please a take photograph of the client?</label>
+      <hint>this is compulsory for loan processing</hint>
+    </upload>
+    <group ref="/fincang_bisloan_dfa/begin_group">
+      <label>Loan Officer collect information on gurantors</label>
+      <input appearance="Can you please provide their details including their passport photo (2) each, mobile phone contact and addresses" ref="/fincang_bisloan_dfa/begin_group/gurantors">
+        <label>Two gurantors are required from you</label>
+        <hint>Loan Officer, confirm gurantors' addresses with utility, water and electricity bills</hint>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group/gurantor1_name">
+        <label>What is the name and address of your 1st gurantor?</label>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group/gurantor1_occup">
+        <label>What is the occupation of 1st gurantor?</label>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group/gurantor1_known_client">
+        <label>How long have you known the client?</label>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group/gurantor1_relat_client">
+        <label>what is your relationship with the client?</label>
+      </input>
+      <upload mediatype="image/*" ref="/fincang_bisloan_dfa/begin_group/gurantor1_photo">
+        <label>I will like to take your photograph for our records</label>
+      </upload>
+      <select1 ref="/fincang_bisloan_dfa/begin_group/commit_gurantor1">
+        <label>I have you agreed to be responble for the payment of this loan, in case the clients defaulted?</label>
+        <hint>If gurantor declined to be responsible in case of default, inform the client and request for another gurantor</hint>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+      </select1>
+      <input ref="/fincang_bisloan_dfa/begin_group/gurantor2_name">
+        <label>What is the name and address of your 2nd gurantor?</label>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group/gurantor2_occup">
+        <label>What is the occupation of 2nd gurantor?</label>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group/gurantor2_known_client">
+        <label>How long have you known the client?</label>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group/gurantor2_relat_client">
+        <label>what is your relationship with the client?</label>
+      </input>
+      <upload mediatype="image/*" ref="/fincang_bisloan_dfa/begin_group/gurantor2_photo">
+        <label>I will like to take your photograph for our records</label>
+      </upload>
+      <select1 ref="/fincang_bisloan_dfa/begin_group/commit_gurantor2">
+        <label>I have you agreed to be responble for the payment of this loan, in case the clients defaulted?</label>
+        <hint>If gurantor declined to be responsible in case of default, inform the client and request for another gurantor</hint>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+      </select1>
+      <select1 appearance="Tick client gender" ref="/fincang_bisloan_dfa/begin_group/gender_list">
+        <label>What is the gender of the client?</label>
+        <hint>Do not ask for gender, please</hint>
+        <item>
+          <label>Female</label>
+          <value>female</value>
+        </item>
+        <item>
+          <label>Male</label>
+          <value>male</value>
+        </item>
+      </select1>
+    </group>
+    <group ref="/fincang_bisloan_dfa/begin_group1">
+      <label>Business verification</label>
+      <input ref="/fincang_bisloan_dfa/begin_group1/date_time_visit">
+        <label>Note date and time of visit to client's business</label>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group1/client_geopoint">
+        <label>Collect GPS coordinates of client's business location</label>
+        <hint>it should be client's business location not finca office</hint>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group1/client_bistype">
+        <label>Enter client's business type</label>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group1/startup_amount">
+        <label>How much did client started business with?</label>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group1/presentworth_biz">
+        <label>How much is client's present value of business?</label>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group1/bankcash_bal">
+        <label>Ask for cash and bank balance as at today?</label>
+        <hint>Record bank balance as reflected in statement of account</hint>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group1/acct_receivables">
+        <label>How much is your business owed by others/customers?</label>
+        <hint>Record amount to be received by client's business</hint>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group1/acct_payable">
+        <label>How much does your/you owed to others</label>
+        <hint>Record amount to be paid by client's business to others</hint>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group1/presentstock_value">
+        <label>Enter present business value from stock and assets</label>
+        <hint>This should be done after stock taking</hint>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group1/workinprog">
+        <label>Enter the total worth of work in progress</label>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group1/inventory">
+        <label>Enter the total worth of business inventory</label>
+      </input>
+    </group>
+    <input ref="/fincang_bisloan_dfa/clients_branch">
+      <label>Which FINCA branch do you have your account?</label>
+    </input>
+    <input ref="/fincang_bisloan_dfa/clients_district">
+      <label>Record clients brach district</label>
+      <hint>You may not need to ask respondent for this information</hint>
+    </input>
+    <select1 ref="/fincang_bisloan_dfa/settlement_type">
+      <label>Record client's type from the options</label>
+      <hint>Note: Urban are national or regional capital, with daily markets, limited or no land available for growing or raising livestock; Peru-urban are outskirts of national or regional capital with limited gardening and livestock activities; Rural location are areas with weekly markets, major dependence on home-grown foods and livestock</hint>
+      <item>
+        <label>Urban</label>
+        <value>urban</value>
+      </item>
+      <item>
+        <label>Peri-Urban</label>
+        <value>peri_urban</value>
+      </item>
+      <item>
+        <label>Rural</label>
+        <value>rural</value>
+      </item>
+    </select1>
+    <group ref="/fincang_bisloan_dfa/begin_group2">
+      <label>Dwelling household Information</label>
+      <input ref="/fincang_bisloan_dfa/begin_group2/dwellingdetails">
+        <label>Interviewer sya: Now I will like to ask if few questions regarding the features of your household</label>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group2/household_size">
+        <label>How many people live in your household?</label>
+        <hint>Enumerator, household members are people living under the same roof (room, flat or whole house) and eating from the same pot.</hint>
+      </input>
+      <select1 appearance="quick" ref="/fincang_bisloan_dfa/begin_group2/flooringmat_list">
+        <label>What is the main material used for the flooring of your dwelling?</label>
+        <item>
+          <label>Earth/Sand</label>
+          <value>floor_earth_sand</value>
+        </item>
+        <item>
+          <label>Dung</label>
+          <value>floor_dung</value>
+        </item>
+        <item>
+          <label>Wood planks</label>
+          <value>floor_woodplanks</value>
+        </item>
+        <item>
+          <label>Palm bamboo</label>
+          <value>floor_palmbamboo</value>
+        </item>
+        <item>
+          <label>Linoleum</label>
+          <value>floor_linoleum</value>
+        </item>
+        <item>
+          <label>Parquet or Polished wood</label>
+          <value>floor_parquet_polishedwood</value>
+        </item>
+        <item>
+          <label>Vinyl Asphalt strips</label>
+          <value>floor_vinyl_asphaltstrips</value>
+        </item>
+        <item>
+          <label>Ceramic tiles</label>
+          <value>floor_ceramictiles</value>
+        </item>
+        <item>
+          <label>Cement</label>
+          <value>floor_cement</value>
+        </item>
+        <item>
+          <label>Carpet</label>
+          <value>floor_carpet</value>
+        </item>
+        <item>
+          <label>Other material specified</label>
+          <value>floor_otherspecify</value>
+        </item>
+        <item>
+          <label>Do not know</label>
+          <value>floor_donotknow</value>
+        </item>
+      </select1>
+      <input appearance="quick" ref="/fincang_bisloan_dfa/begin_group2/flooringmat_others_specified">
+        <label>Enumerator, pleaase write other material specified</label>
+        <hint>Note: other is any material not included in the list</hint>
+      </input>
+      <select1 appearance="quick" ref="/fincang_bisloan_dfa/begin_group2/roofingmat_list">
+        <label>What is the main material used for the roofing of your dwelling?</label>
+        <item>
+          <label>No roof</label>
+          <value>roof_noroof</value>
+        </item>
+        <item>
+          <label>Thatch Palm Leaf</label>
+          <value>roof_thatch_palmleaf</value>
+        </item>
+        <item>
+          <label>Sod</label>
+          <value>roof_sod</value>
+        </item>
+        <item>
+          <label>Rustic mat</label>
+          <value>roof_rustic</value>
+        </item>
+        <item>
+          <label>Palm bamboo</label>
+          <value>roof_palmbamboo</value>
+        </item>
+        <item>
+          <label>Slate</label>
+          <value>roof_slate</value>
+        </item>
+        <item>
+          <label>Wood planks</label>
+          <value>roof_woodplank</value>
+        </item>
+        <item>
+          <label>Calamine Cement Firber</label>
+          <value>roof_calamine_cementfiber</value>
+        </item>
+        <item>
+          <label>Card board</label>
+          <value>roof_cardboard</value>
+        </item>
+        <item>
+          <label>Ceramic tiles</label>
+          <value>roof_ceramictile</value>
+        </item>
+        <item>
+          <label>Cement</label>
+          <value>roof_cement</value>
+        </item>
+        <item>
+          <label>Roofing shingles</label>
+          <value>roof_roofingshingles</value>
+        </item>
+        <item>
+          <label>Other specified</label>
+          <value>roof_otherspecify</value>
+        </item>
+        <item>
+          <label>Do not know</label>
+          <value>roof_donotknow</value>
+        </item>
+      </select1>
+      <input appearance="quick" ref="/fincang_bisloan_dfa/begin_group2/roofingmat_others_specified">
+        <label>Enumerator, pleaase write other material specified</label>
+        <hint>Note: other is any material not included in the list</hint>
+      </input>
+    </group>
+    <select1 ref="/fincang_bisloan_dfa/clientsex">
+      <label>What is respondent's gender?</label>
+      <item>
+        <label>Female</label>
+        <value>female</value>
+      </item>
+      <item>
+        <label>Male</label>
+        <value>male</value>
+      </item>
+    </select1>
+    <input ref="/fincang_bisloan_dfa/loan_interest_rate">
+      <label>What interest rate on your loan?</label>
+    </input>
+    <input ref="/fincang_bisloan_dfa/client_dateofbirth">
+      <label>When were you born?</label>
+    </input>
+    <input ref="/fincang_bisloan_dfa/client_home_address">
+      <label>Client's home address?</label>
+    </input>
+    <select1 ref="/fincang_bisloan_dfa/interviewlocation_list">
+      <label>Where was the interview conducted?</label>
+      <item>
+        <label>Home</label>
+        <value>home</value>
+      </item>
+      <item>
+        <label>Business and Home</label>
+        <value>business</value>
+      </item>
+      <item>
+        <label>Combined business &amp; Home</label>
+        <value>combined _businessandhome</value>
+      </item>
+      <item>
+        <label>FINCA Office</label>
+        <value>fincaoffice</value>
+      </item>
+      <item>
+        <label>Group Meeting</label>
+        <value>group_meeting</value>
+      </item>
+      <item>
+        <label>others</label>
+        <value>other_specify</value>
+      </item>
+    </select1>
+    <input ref="/fincang_bisloan_dfa/others">
+      <label>Please specify</label>
+    </input>
+    <input ref="/fincang_bisloan_dfa/interviewlocation_address">
+      <label>Write physical address of interview location?</label>
+    </input>
+    <input ref="/fincang_bisloan_dfa/dateofinterview">
+      <label>Write today's date?</label>
+    </input>
+    <select ref="/fincang_bisloan_dfa/product_types">
+      <label>What FINCA product do you current have?</label>
+      <item>
+        <label>Village Bank Loan</label>
+        <value>pr_villagebank_loan</value>
+      </item>
+      <item>
+        <label>Small Group Loan</label>
+        <value>pr_smallgroup_loan</value>
+      </item>
+      <item>
+        <label>Individual Loan</label>
+        <value>pr_individual_loan</value>
+      </item>
+      <item>
+        <label>Business Loan</label>
+        <value>pr_business_loan</value>
+      </item>
+      <item>
+        <label>Agriculture Loan</label>
+        <value>pro_agriculture_loan</value>
+      </item>
+      <item>
+        <label>Savings Account</label>
+        <value>pro_savings_account</value>
+      </item>
+      <item>
+        <label>Insurance Product</label>
+        <value>pro_insurance_product</value>
+      </item>
+      <item>
+        <label>others</label>
+        <value>pro_others_specify</value>
+      </item>
+    </select>
+    <input ref="/fincang_bisloan_dfa/otherpro">
+      <label>Please specify other product</label>
+    </input>
+    <input ref="/fincang_bisloan_dfa/amountvill_loan">
+      <label>Specify the amount of village loan</label>
+    </input>
+    <input ref="/fincang_bisloan_dfa/channel_villaLoan">
+      <label>Specify the channel of villagr loan</label>
+    </input>
+    <input ref="/fincang_bisloan_dfa/distance_to_branch_location1">
+      <label>How far is the nearest branch to you?</label>
+    </input>
+    <input ref="/fincang_bisloan_dfa/duration_of_interview1">
+      <label>How long was the interview?</label>
+    </input>
+    <input ref="/fincang_bisloan_dfa/interest_rate_onloan">
+      <label>What is the interest charged on your current loan?</label>
+      <hint>if no, response, enter 999</hint>
+    </input>
+    <input ref="/fincang_bisloan_dfa/clientage">
+      <label>What is client's age?</label>
+      <hint>do not interview less than 30 or more than 50</hint>
+    </input>
+    <upload mediatype="image/*" ref="/fincang_bisloan_dfa/client_photo1">
+      <label>Please a take photograph of the client?</label>
+      <hint>this is optional</hint>
+    </upload>
+    <input ref="/fincang_bisloan_dfa/clients_mobilenumber">
+      <label>Please can I have your mobile phone number?</label>
+      <hint>interviewer, tell client that it is for cross-referecing</hint>
+    </input>
+    <upload mediatype="audio/*" ref="/fincang_bisloan_dfa/record_clientresponse_groupmeeting">
+      <label>How do you feel about group meetings?</label>
+    </upload>
+    <upload mediatype="video/*" ref="/fincang_bisloan_dfa/client_dwelling_exteriorwall_materialused">
+      <label>Take a video of client dwelling</label>
+      <hint>if client decline, do not video dwelling</hint>
+    </upload>
+    <input ref="/fincang_bisloan_dfa/client_geopoint">
+      <label>Collect GPS coordinates of client's location</label>
+      <hint>it should be client's dwelling location not finca office</hint>
+    </input>
+    <select1 ref="/fincang_bisloan_dfa/client_missedworkday">
+      <label>Have you missed work day in the last one month as result of sickness of an household member?</label>
+      <hint>if client has not miss any workday, goto the question on health</hint>
+      <item>
+        <label>No</label>
+        <value>missedworkday_no</value>
+      </item>
+      <item>
+        <label>Yes</label>
+        <value>missedworkday_yes</value>
+      </item>
+    </select1>
+    <input ref="/fincang_bisloan_dfa/number_missedworkdays">
+      <label>How many work days did you missed?</label>
+      <hint>if client has not miss any workday in the 30 days, put 0</hint>
+    </input>
+    <select1 ref="/fincang_bisloan_dfa/client_healthstatus_now">
+      <label>How would you rate your health status now?</label>
+      <hint>enumerator, do not read out the options</hint>
+      <item>
+        <label>Good</label>
+        <value>health_good</value>
+      </item>
+      <item>
+        <label>Fair</label>
+        <value>health_fair</value>
+      </item>
+      <item>
+        <label>Not good</label>
+        <value>health_notgood</value>
+      </item>
+      <item>
+        <label>Poor</label>
+        <value>health_poor</value>
+      </item>
+      <item>
+        <label>Excellent</label>
+        <value>health_excellent</value>
+      </item>
+    </select1>
+    <input ref="/fincang_bisloan_dfa/endnote">
+      <label>Interviewer thank the respondent for his/her time</label>
+      <hint>enumerator, please do not forget to thank the respondent and review the form before submission.</hint>
+    </input>
+    <group ref="/fincang_bisloan_dfa/begin_group3">
+      <label>Household information</label>
+      <input ref="/fincang_bisloan_dfa/begin_group3/householdmembers_list">
+        <label>How many people are there in your household?</label>
+      </input>
+      <input ref="/fincang_bisloan_dfa/begin_group3/number_mealsday_hhm">
+        <label>How many meals do your household take in a day</label>
+      </input>
+      <select1 ref="/fincang_bisloan_dfa/begin_group3/householdhead_list">
+        <label>Who is the head of your household?</label>
+        <hint>Enumerator, note that househead is defined as the person acknowledged by the respodent as the head of the household. Explain thathead is the accepted household leader or decision maker on the basis of age (older), sex(gender), but not necessarily male, economic status(main provider), or some other reason.</hint>
+        <item>
+          <label>Self</label>
+          <value>hhhead_self</value>
+        </item>
+        <item>
+          <label>Husband</label>
+          <value>hhhead_husband</value>
+        </item>
+        <item>
+          <label>Wife</label>
+          <value>hhhead_wife</value>
+        </item>
+        <item>
+          <label>Other member of household</label>
+          <value>hhhead_othermember</value>
+        </item>
+      </select1>
+    </group>
+    <select1 ref="/fincang_bisloan_dfa/changeshh1">
+      <label>Has there been any changes in your household in the last 6 months?</label>
+      <hint>Numerator, do not repeat any option twice</hint>
+      <item>
+        <label>No</label>
+        <value>changeshh1_no</value>
+      </item>
+      <item>
+        <label>Yes</label>
+        <value>changeshh1_yes</value>
+      </item>
+    </select1>
+    <select1 ref="/fincang_bisloan_dfa/specific_changes1">
+      <label>What are the specific changes in your household in the last 6 months?</label>
+      <hint>Do not repeat any of the option already picked</hint>
+      <item>
+        <label>Household size increased</label>
+        <value>spechange1</value>
+      </item>
+      <item>
+        <label>Flooring</label>
+        <value>spechange2</value>
+      </item>
+      <item>
+        <label>Roofing</label>
+        <value>spechange3</value>
+      </item>
+      <item>
+        <label>Exterior walls</label>
+        <value>spechange4</value>
+      </item>
+      <item>
+        <label>Source of drinking water</label>
+        <value>spechange5</value>
+      </item>
+      <item>
+        <label>Sanitation facility used by household</label>
+        <value>spechange6</value>
+      </item>
+    </select1>
+    <select1 ref="/fincang_bisloan_dfa/specific_changes2">
+      <label>What are the specific changes in your household in the last 6 months?2</label>
+      <hint>Do not repeat any of the option already picked</hint>
+      <item>
+        <label>Household size increased</label>
+        <value>spechange1</value>
+      </item>
+      <item>
+        <label>Flooring</label>
+        <value>spechange2</value>
+      </item>
+      <item>
+        <label>Roofing</label>
+        <value>spechange3</value>
+      </item>
+      <item>
+        <label>Exterior walls</label>
+        <value>spechange4</value>
+      </item>
+      <item>
+        <label>Source of drinking water</label>
+        <value>spechange5</value>
+      </item>
+      <item>
+        <label>Sanitation facility used by household</label>
+        <value>spechange6</value>
+      </item>
+    </select1>
+    <select1 ref="/fincang_bisloan_dfa/specific_changes3">
+      <label>What are the specific changes in your household in the last 6 months?3</label>
+      <hint>Do not repeat any of the option already picked</hint>
+      <item>
+        <label>Household size increased</label>
+        <value>spechange1</value>
+      </item>
+      <item>
+        <label>Flooring</label>
+        <value>spechange2</value>
+      </item>
+      <item>
+        <label>Roofing</label>
+        <value>spechange3</value>
+      </item>
+      <item>
+        <label>Exterior walls</label>
+        <value>spechange4</value>
+      </item>
+      <item>
+        <label>Source of drinking water</label>
+        <value>spechange5</value>
+      </item>
+      <item>
+        <label>Sanitation facility used by household</label>
+        <value>spechange6</value>
+      </item>
+    </select1>
+    <select1 ref="/fincang_bisloan_dfa/specific_changes4">
+      <label>What are the specific changes in your household in the last 6 months?4</label>
+      <hint>Do not repeat any of the option already picked</hint>
+      <item>
+        <label>Household size increased</label>
+        <value>spechange1</value>
+      </item>
+      <item>
+        <label>Flooring</label>
+        <value>spechange2</value>
+      </item>
+      <item>
+        <label>Roofing</label>
+        <value>spechange3</value>
+      </item>
+      <item>
+        <label>Exterior walls</label>
+        <value>spechange4</value>
+      </item>
+      <item>
+        <label>Source of drinking water</label>
+        <value>spechange5</value>
+      </item>
+      <item>
+        <label>Sanitation facility used by household</label>
+        <value>spechange6</value>
+      </item>
+    </select1>
+    <select1 ref="/fincang_bisloan_dfa/specific_changes5">
+      <label>What are the specific changes in your household in the last 6 months?5</label>
+      <hint>Do not repeat any of the option already picked</hint>
+      <item>
+        <label>Household size increased</label>
+        <value>spechange1</value>
+      </item>
+      <item>
+        <label>Flooring</label>
+        <value>spechange2</value>
+      </item>
+      <item>
+        <label>Roofing</label>
+        <value>spechange3</value>
+      </item>
+      <item>
+        <label>Exterior walls</label>
+        <value>spechange4</value>
+      </item>
+      <item>
+        <label>Source of drinking water</label>
+        <value>spechange5</value>
+      </item>
+      <item>
+        <label>Sanitation facility used by household</label>
+        <value>spechange6</value>
+      </item>
+    </select1>
+    <select1 ref="/fincang_bisloan_dfa/specific_changes6">
+      <label>What are the specific changes in your household in the last 6 months?6</label>
+      <hint>Do not repeat any of the option already picked</hint>
+      <item>
+        <label>Household size increased</label>
+        <value>spechange1</value>
+      </item>
+      <item>
+        <label>Flooring</label>
+        <value>spechange2</value>
+      </item>
+      <item>
+        <label>Roofing</label>
+        <value>spechange3</value>
+      </item>
+      <item>
+        <label>Exterior walls</label>
+        <value>spechange4</value>
+      </item>
+      <item>
+        <label>Source of drinking water</label>
+        <value>spechange5</value>
+      </item>
+      <item>
+        <label>Sanitation facility used by household</label>
+        <value>spechange6</value>
+      </item>
+    </select1>
+    <select1 ref="/fincang_bisloan_dfa/assessment">
+      <label>How do you feel about the interview so far?</label>
+      <item>
+        <label ref="jr:itext('/fincang_bisloan_dfa/assessment/good:label')"/>
+        <value>good</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/fincang_bisloan_dfa/assessment/poor:label')"/>
+        <value>poor</value>
+      </item>
+    </select1>
+    <upload mediatype="image/*" ref="/fincang_bisloan_dfa/signature">
+      <label>Please sign</label>
+    </upload>
+  </h:body>
+</h:html>
